@@ -1,0 +1,37 @@
+<div *ngIf="product">
+  <div style="display: flex;
+  justify-content: center;
+  width: 21%;">
+    <h2>{{product.name | uppercase}} </h2>
+  </div>
+  <table>
+    <tr>
+      <td>failsafe:</td>
+      <td>{{product.failsafe}}</td>
+    </tr>
+    <tr>
+      <td>deviceTypeId:</td>
+      <td>{{product.deviceTypeId}}</td>
+    </tr>
+    <tr>
+      <td>tempMin:</td>
+      <td>{{product.tempMin}}</td>
+    </tr>
+    <tr>
+      <td>tempMax:</td>
+      <td>{{product.tempMax}}</td>
+    </tr>
+    <tr>
+      <td>installationPosition:</td>
+      <td>{{product.installationPosition}}</td>
+    </tr>
+    <tr>
+      <td>insertInto19InchCabinet:</td>
+      <td>{{product.insertInto19InchCabinet}}</td>
+    </tr>
+  </table>
+</div>
+
+
+
+<button (click)="goBack()">go back</button>

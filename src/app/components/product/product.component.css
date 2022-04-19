@@ -1,0 +1,62 @@
+
+.header-prdoucts{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.m-1{
+  margin: 1%;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background: #dedede;
+  width: 15%;
+  border-radius: 15px;
+  margin: 1%;
+}
+.x{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 133px;
+}
+.btn-card{
+  display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+.matIcon{
+  width: 30%;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+  display: block;
+  border-radius: 20px;
+  width: 20%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+.add-button {
+ padding: .5rem 1.5rem;
+ font-size: 1rem;
+ border-radius: 20px;
+}
+
+.add-button:hover {
+  color: white;
+  background-color: #42545C;
+}

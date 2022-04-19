@@ -1,0 +1,38 @@
+<h2>My Products</h2>
+<div class="header-prdoucts">
+  <label class="m-1">Product name: </label>
+  <input class="m-1" #ProductName />
+
+  <button class="add-button m-1" (click)="add(ProductName.value); ProductName.value=''">
+    Add Product
+  </button>
+</div>
+
+
+<div class="card-container">
+
+
+  <div class="card" *ngFor="let Product of Products">
+    <div class="btn-card">
+      <button class="matIcon" title="Open Product" routerLink="/detail/{{Product.id}}">
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+    </div>
+    <mat-card class="x">
+      <mat-card-title> {{Product.name}}</mat-card-title>
+      <mat-card-subtitle>{{Product.deviceTypeId}}</mat-card-subtitle>
+      <mat-card-content>
+        <p> {{Product.failsafe}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="btn-card">
+          <button class="matIcon" title="delete Product" (click)="delete(Product)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+
+</div>
